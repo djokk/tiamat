@@ -1,0 +1,178 @@
+$color: #e13737;
+$MuseoSansCyrl: 'MuseoSansCyrl';
+
+h1,h2,h3,h4,h5,h6,p,ul{
+    margin: 0;
+}
+
+a:hover{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+//----верхний навигатор-------
+.nav-top{
+    margin: 30px 0px 22px;
+    &__text{
+        font-family: 'MuseoSansCyrl';
+        font-weight: 300;
+        font-size: 14px;
+        width: 302px;
+    }
+    
+}
+
+.form-wrap{
+    width: 260px;
+    height: 38px;
+    background: #f2f2f2;
+    border-radius: 17px;
+    border: 1px solid #e7e7e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-input{
+    border: none;
+    background: none;
+    outline: none;
+    width: 194px;
+    margin-left: 12px;
+}
+
+.form-btn{
+    width: 45px;
+    height: 32px;
+    border: none;
+    border-radius: 17px;
+    background: #3c3c3c;
+    color: #fff;
+    &:hover{
+        outline: none; 
+    }
+}
+
+.fa-phone{
+    width: 36px;
+    height: 36px;
+    background: $color;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 17px;
+}
+
+.phone{
+    color: #101010;
+
+    &__wrap{
+        margin-left: 13px;
+    }
+
+    &__number{
+        font-family: $MuseoSansCyrl;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+
+    &__text{
+        font-family: $MuseoSansCyrl;
+        font-size: 13px;
+        font-weight: 100;
+        line-height: 1.2;
+    }
+
+    &:hover{
+        color: #101010;
+    }
+}
+//----верхний навигатор-------///
+
+//----навигатор-------
+.nav{
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 10px;
+    box-shadow: 0px 3px 3.24px 0.76px rgba(108, 83, 64, 0.06);
+
+    &__catalog{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__link{
+        width: 195px;
+        height: 34px;
+        border-radius: 4px;
+        background: $color;
+        color: #fff !important;
+        font-family: $MuseoSansCyrl;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.875;
+
+        &:hover{
+            color: #fff;
+        }
+    }
+
+    ul li a{
+        color: #111;
+        font-family: $MuseoSansCyrl;
+        font-weight: 500;
+    }
+
+    &__pb{
+        font-size: 23px;
+    }
+
+    &__shopping{
+        position: relative;
+        margin-left: 20px;
+    }
+
+    &__shopping_number{
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: $color;
+        position: absolute;
+        font-family: $MuseoSansCyrl;
+        font-size: 8px;
+        font-weight: 300;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0px;
+        right: -6px;
+        color: #fff;
+    }
+}
+
+.fa-tasks{
+    margin-left: 13px;
+}
+.fa-angle-down{
+    margin-right: 13px;
+}
+//----навигатор-------///
+
+//----слайдер-------
+.slider{
+    margin-top: 25px;
+}
+//----слайдер-------///
+
+
+.line{
+    width: 777px;
+    height: 1px;
+    background: #dadada;
+}

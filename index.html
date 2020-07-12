@@ -11,6 +11,7 @@
    <link rel="stylesheet" href="css/font-awesome.css">
    <link rel="stylesheet" href="css/bootstrap.css">
    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+   <link rel="stylesheet" href="css/slick.css">
    <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -74,33 +75,108 @@
          </div>
       </div>
       <div class="container">
-         <div class="slider">
-            <div class="slider__item">
+         <div class="slider-header">
+            <div class="slider-header__item">
                <img src="img/slider_03.png" alt="">
             </div>
-            <div class="slider__item"></div>
-            <div class="slider__item"></div>
+            <div class="slider-header__item"><img src="img/slider_03.png" alt=""></div>
+            <div class="slider-header__item"><img src="img/slider_03.png" alt=""></div>
+            <div class="slider-header__item"><img src="img/slider_03.png" alt=""></div>
          </div>
       </div>
    </header>
 
-   <section class="hit">
-      <div class="container d-flex justify-content-between align-items-center">
-         <div class="hit__name d-flex align-items-center">
+   <section class="hit container indentation">
+      <div class="d-flex justify-content-between align-items-center ">
+         <div class="hit__name d-flex align-items-center w-100">
             <i class="fa fa-bolt" aria-hidden="true"></i>
-            <h4>Хиты продаж</h4>
+            <h4 class="section-text">Хиты продаж</h4>
          </div>
-         <div class="line"></div>
-         <a href="hit__btn-link">Все товары</a>
+         <div class="d-flex align-items-center w-100">
+            <div class="line"></div>
+            <a href="" class="btn-link">Все товары</a>
+         </div>
+      </div>
+      <div class="slider-hit d-flex">
+         <div class="slider-hit__item">
+            <div class="slider-hit__slider">
+               <img class="slider-hit__img" src="img/tiamat_03.jpg" alt="">
+               <h3 class="slider-hit__title">Герметик акриловый для дерева Tiamat A-125, 300 мл. картридж</h3>
+               <h4 class="slider-hit__price">1200 руб/шт</h4>
+               <a href="" class="slider-hit__btn-item">Подробнее</a>
+               <p class="slider-hit__sub-title">Доступно 13 цветов</p>
+            </div>
+         </div>
+         <div class="slider-hit__item">
+            <div class="slider-hit__slider">
+               <img class="slider-hit__img" src="img/tiamat_03.jpg" alt="">
+               <h3 class="slider-hit__title">Герметик акриловый для дерева Tiamat A-125, 300 мл. картридж</h3>
+               <h4 class="slider-hit__price">1200 руб/шт</h4>
+               <a href="" class="slider-hit__btn-item">Подробнее</a>
+               <p class="slider-hit__sub-title">Доступно 13 цветов</p>
+            </div>
+         </div>
+         <div class="slider-hit__item">
+            <div class="slider-hit__slider">
+               <img class="slider-hit__img" src="img/tiamat_03.jpg" alt="">
+               <h3 class="slider-hit__title">Герметик акриловый для дерева Tiamat A-125, 300 мл. картридж</h3>
+               <h4 class="slider-hit__price">1200 руб/шт</h4>
+               <a href="" class="slider-hit__btn-item">Подробнее</a>
+               <p class="slider-hit__sub-title">Доступно 13 цветов</p>
+            </div>
+         </div>
+         <div class="slider-hit__item">
+            <div class="slider-hit__slider">
+               <img class="slider-hit__img" src="img/tiamat_03.jpg" alt="">
+               <h3 class="slider-hit__title">Герметик акриловый для дерева Tiamat A-125, 300 мл. картридж</h3>
+               <h4 class="slider-hit__price">1200 руб/шт</h4>
+               <a href="" class="slider-hit__btn-item">Подробнее</a>
+               <p class="slider-hit__sub-title">Доступно 13 цветов</p>
+            </div>
+         </div>
+         <div class="slider-hit__item">
+            <div class="slider-hit__slider">
+               <img class="slider-hit__img" src="img/tiamat_03.jpg" alt="">
+               <h3 class="slider-hit__title">Герметик акриловый для дерева Tiamat A-125, 300 мл. картридж</h3>
+               <h4 class="slider-hit__price">1200 руб/шт</h4>
+               <a href="" class="slider-hit__btn-item">Подробнее</a>
+               <p class="slider-hit__sub-title">Доступно 13 цветов</p>
+            </div>
+         </div>
+         <div class="slider-hit__item">
+            <div class="slider-hit__slider">
+               <img class="slider-hit__img" src="img/tiamat_03.jpg" alt="">
+               <h3 class="slider-hit__title">Герметик акриловый для дерева Tiamat A-125, 300 мл. картридж</h3>
+               <h4 class="slider-hit__price">1200 руб/шт</h4>
+               <a href="" class="slider-hit__btn-item">Подробнее</a>
+               <p class="slider-hit__sub-title">Доступно 13 цветов</p>
+            </div>
+         </div>
       </div>
    </section>
 
+   <section class="popular indentation">
+      <div class="container d-flex justify-content-between align-items-center ">
+         <div class="popular__name d-flex align-items-center">
+            <i class="fa fa-ticket" aria-hidden="true"></i>
+            <h4 class="section-text">Популярные категории</h4>
+         </div>
+         <div class="line"></div>
+         <a href="" class="btn-link">Все товары</a>
+      </div>
+   </section>
 
 
 
    <script src="js/jquery-3.4.1.min.js"></script>
    <script src="js/popper.min.js"></script>
    <script src="js/bootstrap.js"></script>
+   <script src="js/slick.min.js"></script>
+   <script src="js/slider.js"></script>
+   <script>
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+         ':35729/livereload.js?snipver=1"></' + 'script>')
+   </script>
 </body>
 
 </html>

@@ -1,30 +1,46 @@
 $color: #e13737;
 $MuseoSansCyrl: 'MuseoSansCyrl';
 
-h1,h2,h3,h4,h5,h6,p,ul{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
     margin: 0;
 }
 
-a:hover{
+body{
+    background: #fcfcfc;
+}
+
+a:hover {
     text-decoration: none;
 }
-ul{
+
+ul {
     list-style: none;
+}
+:focus{
+    outline: none;
 }
 
 //----верхний навигатор-------
-.nav-top{
+.nav-top {
     margin: 30px 0px 22px;
-    &__text{
+
+    &__text {
         font-family: 'MuseoSansCyrl';
         font-weight: 300;
         font-size: 14px;
         width: 302px;
     }
-    
+
 }
 
-.form-wrap{
+.form-wrap {
     width: 260px;
     height: 38px;
     background: #f2f2f2;
@@ -35,7 +51,7 @@ ul{
     align-items: center;
 }
 
-.form-input{
+.form-input {
     border: none;
     background: none;
     outline: none;
@@ -43,19 +59,20 @@ ul{
     margin-left: 12px;
 }
 
-.form-btn{
+.form-btn {
     width: 45px;
     height: 32px;
     border: none;
     border-radius: 17px;
     background: #3c3c3c;
     color: #fff;
-    &:hover{
-        outline: none; 
+
+    &:hover {
+        outline: none;
     }
 }
 
-.fa-phone{
+.fa-phone {
     width: 36px;
     height: 36px;
     background: $color;
@@ -67,47 +84,48 @@ ul{
     font-size: 17px;
 }
 
-.phone{
+.phone {
     color: #101010;
 
-    &__wrap{
+    &__wrap {
         margin-left: 13px;
     }
 
-    &__number{
+    &__number {
         font-family: $MuseoSansCyrl;
         font-size: 20px;
         font-weight: 300;
         line-height: 1.2;
     }
 
-    &__text{
+    &__text {
         font-family: $MuseoSansCyrl;
         font-size: 13px;
         font-weight: 100;
         line-height: 1.2;
     }
 
-    &:hover{
+    &:hover {
         color: #101010;
     }
 }
+
 //----верхний навигатор-------///
 
 //----навигатор-------
-.nav{
+.nav {
     border-top: 1px solid #e8e8e8;
     border-bottom: 1px solid #e8e8e8;
     padding: 10px;
     box-shadow: 0px 3px 3.24px 0.76px rgba(108, 83, 64, 0.06);
 
-    &__catalog{
+    &__catalog {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    &__link{
+    &__link {
         width: 195px;
         height: 34px;
         border-radius: 4px;
@@ -118,27 +136,27 @@ ul{
         font-weight: 500;
         line-height: 1.875;
 
-        &:hover{
+        &:hover {
             color: #fff;
         }
     }
 
-    ul li a{
+    ul li a {
         color: #111;
         font-family: $MuseoSansCyrl;
         font-weight: 500;
     }
 
-    &__pb{
+    &__pb {
         font-size: 23px;
     }
 
-    &__shopping{
+    &__shopping {
         position: relative;
         margin-left: 20px;
     }
 
-    &__shopping_number{
+    &__shopping_number {
         width: 14px;
         height: 14px;
         border-radius: 50%;
@@ -156,23 +174,223 @@ ul{
     }
 }
 
-.fa-tasks{
+.fa-tasks {
     margin-left: 13px;
 }
-.fa-angle-down{
+
+.fa-angle-down {
     margin-right: 13px;
 }
+
 //----навигатор-------///
 
 //----слайдер-------
-.slider{
+.slider-header {
     margin-top: 25px;
+    border-radius: 8px;
+
+    &__item img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__item:focus {
+        outline: none;
+    }
 }
+
+.slick-dots {
+    width: 88px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 42px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+}
+
+.slick-dots button {
+    width: 16px;
+    height: 16px;
+    font-size: 0;
+    background: #f9f9f9;
+    border-radius: 50%;
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.slick-dots .slick-active button {
+    background: $color;
+}
+
 //----слайдер-------///
 
+//----Hit section-------
+section .fa {
+    font-size: 20px;
+    color: $color;
+}
 
-.line{
+.section-text {
+    font-family: $MuseoSansCyrl;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #111;
+    margin-left: 7px;
+}
+
+
+.line {
     width: 777px;
     height: 1px;
     background: #dadada;
+    margin-right: 22px;
 }
+
+.btn-link {
+    width: 109px;
+    height: 24px;
+    background: $color;
+    border-radius: 12px;
+    font-family: $MuseoSansCyrl;
+    font-size: 12px;
+    line-height: 2.5;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.indentation {
+    margin-top: 26px;
+}
+
+.slider-hit{
+    
+
+    &__item {
+        width: 209px;
+        height: 299px;
+        border: 1px solid #f4f4f4;
+        border-radius: 10px;
+        background-color: #fff;
+        margin: 9px;
+
+        &:hover{
+            box-shadow: 0px 0px 9px 2px rgba(179, 179, 179,0.21);
+            transition: 0.2s all;
+        }  
+    }
+
+    &__slider{
+        display: flex;
+        // justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__img{
+        width: 151px;
+        height: 142px;
+        margin: 16px auto 11px;
+    }
+      
+    &__title {
+        width: 168px;
+        font-size: 14px;
+        font-family: $MuseoSansCyrl;
+        font-weight: 400;
+        color: #111;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    &__price {
+        font-size: 16px;
+        font-family: $MuseoSansCyrl;
+        color: $color;
+        line-height: 1.5;
+        text-align: center;
+        margin: 14px auto 14px;
+    }
+
+    &__btn-item{
+        display: none;
+        font-size: 15px;
+        font-family: $MuseoSansCyrl;
+        font-weight: 900;
+        color: #fff;
+        background: $color;
+        border-radius: 16px;
+        // line-height: 1.5;
+        text-align: center;
+        margin: 7px auto 9px;
+        padding: 7px 22px;
+
+        &:hover{
+            color: #fff;
+        }
+    }
+
+    &__sub-title {
+        font-size: 12px;
+        font-family: $MuseoSansCyrl;
+        font-weight: 300;
+        color: #1b1b1b;
+        line-height: 1.2;
+        text-align: center;
+    }
+}
+.slider-hit__item:hover .slider-hit__price{
+    display: none;
+    
+}
+.slider-hit__item:hover .slider-hit__btn-item{
+    display: block;
+}
+
+.slick-arrow{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 99;
+    &:focus{
+        outline: none;
+    }
+}
+  
+.slick-prev{
+    left: -16px;
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 50%;
+    background: #fff;
+    color: $color;
+}
+.slick-next{
+    right: -16px;
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 50%;
+    background: #fff;
+    color: $color !important;
+}
+
+//----Hit section-------///
+
+//----Popular section-------
+.popular .line {
+    width: 720px;
+}
+
+//----Popular section-------///

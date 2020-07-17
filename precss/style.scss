@@ -1,0 +1,1007 @@
+@import 'mixins.scss';
+
+$color: #e13737;
+$MuseoSansCyrl: 'MuseoSansCyrl';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #fcfcfc;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+:focus{
+    outline: none;
+}
+
+//----верхний навигатор-------
+.nav-top {
+    margin: 30px 0px 22px;
+    .col-xl-6{
+        @include block_991{
+            flex-direction: column;
+            &:nth-child(1){
+                text-align: center;
+            }
+            &:nth-child(2){
+                flex-direction: column-reverse;
+                text-align: right;
+            }
+            .form-wrap{
+                margin-top: 10px;
+            }
+        }
+    }
+
+    &__text {
+        font-family: 'MuseoSansCyrl';
+        font-weight: 300;
+        font-size: 14px;
+        width: 302px;
+
+        @include block_1199{
+            font-size: 9px;
+            margin-left: 10px;
+            width: 100%;
+        }
+
+        @include block_991{
+            font-size: 14px;
+            margin: 10px 0 0 0;
+        }
+
+        @include block_767{
+            font-size: 10px;
+        }
+    }
+
+    .form-wrap {
+        width: 260px;
+        height: 38px;
+        background: #f2f2f2;
+        border-radius: 17px;
+        border: 1px solid #e7e7e7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .form-input {
+        border: none;
+        background: none;
+        outline: none;
+        width: 194px;
+        margin-left: 12px;
+    }
+    
+    .form-btn {
+        width: 45px;
+        height: 32px;
+        border: none;
+        border-radius: 17px;
+        background: #3c3c3c;
+        color: #fff;
+    
+        &:hover {
+            outline: none;
+        }
+    }
+    
+    .fa-phone {
+        width: 36px;
+        height: 36px;
+        background: $color;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 17px;
+    }
+    
+    .phone {
+        color: #101010;
+
+        &__wrap {
+            margin-left: 13px;
+        }
+    
+        &__number {
+            font-family: $MuseoSansCyrl;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 1.2;
+        }
+    
+        &__text {
+            font-family: $MuseoSansCyrl;
+            font-size: 13px;
+            font-weight: 100;
+            line-height: 1.2;
+        }
+    
+        &:hover {
+            color: #101010;
+        }
+    }
+}
+
+
+
+//----верхний навигатор-------///
+
+//----навигатор-------
+.nav {
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 10px;
+    box-shadow: 0px 3px 3.24px 0.76px rgba(108, 83, 64, 0.06);
+
+    &__link {
+        width: 195px;
+        height: 34px;
+        border-radius: 4px;
+        background: $color;
+        color: #fff !important;
+        font-family: $MuseoSansCyrl;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.875;
+
+        &:hover {
+            color: #fff;
+        }
+
+        @include custom-media-min(320px){
+            font-size: 15px;
+        }
+
+        .fa-tasks{
+            margin: 0 10px 0 11px;
+            font-size: 16px !important;
+        }
+
+        .fa-angle-down {
+            margin: 0 10px 0 11px;
+            font-size: 16px !important;
+        }
+    }
+
+    ul:nth-child(2){
+        width: 759px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include block_1199{
+            width: 659px;
+        }
+        @include block_991{
+            display: none;
+        }
+    }
+
+    ul:nth-child(3){
+        width: 64px;
+        @include block_1199{
+            width: 54px;
+        }
+    }
+
+    ul li a {
+        color: #111;
+        font-family: $MuseoSansCyrl;
+        font-weight: 500;
+        transition: .25s all;
+
+        &:hover{
+            color: $color;
+        }
+    }
+
+    .fa {
+        font-size: 23px;
+    }
+
+    &__shopping {
+        position: relative;
+    }
+
+    &__shopping_number {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: $color;
+        position: absolute;
+        font-family: $MuseoSansCyrl;
+        font-size: 8px;
+        font-weight: 300;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0px;
+        right: -6px;
+        color: #fff;
+    }
+}
+//----навигатор-------///
+
+//----слайдер-------
+.slider-header {
+    margin-top: 25px;
+    border-radius: 8px;
+
+    &__item img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__item:focus {
+        outline: none;
+    }
+}
+
+.slick-dots {
+    width: 88px;
+    height: 16px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 42px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+
+    @include block_991{
+        bottom: 28px;
+    }
+    @include custom-media(420px){
+        bottom: 20px;
+    }
+}
+
+.slick-dots button {
+    width: 16px;
+    height: 16px;
+    font-size: 0;
+    background: #f9f9f9;
+    border-radius: 50%;
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    @include block_991{
+        width: 13px;
+        height: 13px;
+    }
+    @include block_767{
+        width: 10px;
+        height: 12px;
+    }
+}
+
+.slick-dots .slick-active button {
+    background: $color;
+}
+
+//----слайдер-------///
+
+//----Hit section-------
+.name {
+    .fa {
+        font-size: 20px;
+        color: $color;
+    }
+}
+
+.section-text {
+    font-family: $MuseoSansCyrl;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #111;
+    margin: 0 20px 0 7px;
+    width: 130px;
+    @include custom-media(425px){
+        font-size: 12px;
+        width: 100px;
+    }
+}
+
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: #dadada;
+    @include custom-media(425px){
+        height: 0;
+    }
+}
+
+.link-box{
+    .btn-link {
+        width: 109px;
+        height: 24px;
+        background: $color;
+        border-radius: 12px;
+        font-family: $MuseoSansCyrl;
+        font-size: 12px;
+        line-height: 2.5;
+        color: #fff;
+        margin-left: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+        @include custom-media(425px){
+            margin: 0;
+        }
+    }
+
+}
+
+.indentation {
+    margin-top: 26px;
+}
+
+.slider-hit{
+    
+
+    &__item {
+        width: 209px;
+        height: 299px;
+        border: 1px solid #f4f4f4;
+        border-radius: 10px;
+        background-color: #fff;
+        margin: 9px;
+
+        &:hover{
+            box-shadow: 0px 0px 9px 2px rgba(179, 179, 179,0.21);
+            transition: 0.2s all;
+        }  
+    }
+
+    &__slider{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__img{
+        width: 151px;
+        height: 142px;
+        margin: 16px auto 11px;
+    }
+      
+    &__title {
+        width: 168px;
+        font-size: 14px;
+        font-family: $MuseoSansCyrl;
+        font-weight: 400;
+        color: #111;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    &__price {
+        font-size: 16px;
+        font-family: $MuseoSansCyrl;
+        color: $color;
+        line-height: 1.5;
+        text-align: center;
+        margin: 14px auto 14px;
+    }
+
+    &__btn-item{
+        display: none;
+        font-size: 15px;
+        font-family: $MuseoSansCyrl;
+        font-weight: 900;
+        color: #fff;
+        background: $color;
+        border-radius: 16px;
+        text-align: center;
+        margin: 7px auto 9px;
+        padding: 7px 22px;
+
+        &:hover{
+            color: #fff;
+        }
+    }
+
+    &__sub-title {
+        font-size: 12px;
+        font-family: $MuseoSansCyrl;
+        font-weight: 300;
+        color: #1b1b1b;
+        line-height: 1.2;
+        text-align: center;
+    }
+    &__item{
+        &:hover .slider-hit__price{
+        display: none;
+        }
+        &:hover .slider-hit__btn-item{
+            display: block;
+        }
+    }
+}
+
+.slick-arrow{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 99;
+    color: #848484;
+    &:focus{
+        outline: none;
+    }
+}
+  
+.slick-prev{
+    left: -16px;
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 50%;
+    background: #fff;
+    &:hover{
+        border-color: $color;
+    }
+}
+.fa-angle-left{
+    color: #848484;
+}
+
+.slick-prev:hover .fa-angle-left{
+    color: $color;
+}
+
+.slick-next{
+    right: -16px;
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 50%;
+    background: #fff;
+    &:hover{
+        border-color: $color;
+    }
+    
+}
+.fa-angle-right{
+    color: #848484;
+}
+
+.slick-next:hover .fa-angle-right{
+    color: $color;
+}
+
+//----Hit section-------///
+
+//----Popular section-------
+.popular {
+    .section-text{
+        width: 227px;
+        @include custom-media(425px){
+            width: 142px;
+        }
+    }
+    
+}
+
+.slider-popular{
+
+    &__item{
+        width: 100%;
+        height: 184px;
+        border-radius: 10px;
+        margin: 20px 15px 5px;
+        padding: 0;
+    }
+    
+    &__bg{
+        background-image: linear-gradient( -63deg, rgb(229,229,229) 0%, rgb(212,240,238) 100%);
+    }
+
+    &__text{
+        font-family: $MuseoSansCyrl;
+        font-size: 24px;
+        font-weight: 900;
+        color: #111;
+        margin: 34px 0 0 36px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__subtitle{
+        font-family: $MuseoSansCyrl;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 1.2;
+        color: #111;
+        margin: 9px 0 27px 36px;
+        width: 152px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__btn-item{
+        display: inline-block;
+        font-size: 14px;
+        font-family: $MuseoSansCyrl;
+        font-weight: 500;
+        line-height: 1.2;
+        color: #fff;
+        background: $color;
+        border-radius: 16px;
+        padding: 7px 22px;
+        margin-left: 36px;
+        position: relative;
+        z-index: 1;
+
+        &:hover{
+            background: #008cd6;
+            color: #fff;
+        }
+    }
+
+    &__img{
+        position: absolute;
+        right: 5px;
+        bottom: -5px;
+    }
+
+    .slick-arrow{
+        top: 64.81%;
+        transform: translateY(-100%);
+    }
+}
+  
+//----Popular section-------
+
+//----Stock section-------
+.stock{
+    .section-text{
+        width: 166px;
+        @include custom-media(425px){
+            width: 140px;
+        }
+    }
+
+    .slider-stock{
+        
+        &__item {
+            width: 205px;
+            height: 295px;
+            border: 1px solid #f4f4f4;
+            border-radius: 10px;
+            background-color: #fff;
+            margin: 9px;
+    
+            &:hover{
+                box-shadow: 0px 0px 9px 2px rgba(179, 179, 179,0.21);
+                transition: 0.2s all;
+            }  
+        }
+    
+        &__slider{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        &__img{
+            margin: 25px auto 22px;
+        }
+          
+        &__title {
+            width: 168px;
+            font-size: 14px;
+            font-family: $MuseoSansCyrl;
+            font-weight: 400;
+            color: #111;
+            line-height: 1.2;
+            text-align: center;
+        }      
+    
+        &__price {
+            font-size: 16px;
+            font-family: $MuseoSansCyrl;
+            color: $color;
+            font-weight: 900;
+            line-height: 24px;
+            text-align: center;
+            margin: 12px auto 6px;
+        }
+                 
+        &__sub-title {
+            font-size: 13px;
+            font-family: $MuseoSansCyrl;
+            font-weight: 300;
+            text-decoration: line-through;
+            color: #1b1b1b;
+            line-height: 1.846;
+            text-align: center;
+            margin-right: 4px;
+        }
+    
+        &__discount{
+            font-size: 13px;
+            font-family: $MuseoSansCyrl;
+            font-weight: 700;
+            line-height: 1.846;
+            color: #fff;
+            background: $color;
+            text-align: center;
+            padding: 3px 3px;
+    
+            &:hover{
+                color: #fff;
+            }
+        } 
+
+        &__item{
+            &:hover .slider-hit__price{
+            display: none;
+            }
+            &:hover .slider-hit__btn-item{
+                display: block;
+            }
+        }
+    }
+}
+//----Stock section-------///
+
+//----Tips section-------
+.tips{
+    .section-text{
+        width: 135px;
+        @include custom-media(425px){
+            width: 120px;
+        }
+    }
+
+    .slider-tips{
+        &__item{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            margin: 9px 15px;
+            padding: 9px;
+            border: 1px solid #f4f4f4;
+            border-radius: 4px;
+
+            &:hover{
+                box-shadow: 0px 0px 9px 2px rgba(179, 179, 179,0.5);
+            }
+        }
+
+        &__img{
+            width: 100%;
+            height: 100%;
+        }
+
+        &__text{
+            font-size: 16px;
+            font-family: $MuseoSansCyrl;
+            color: #111;
+            line-height: 1.2;
+            text-align: center;
+            width: 283px;
+            margin: 12px 0 3px 0;
+            @include block_991{
+                width: 100%;
+            }
+        }  
+
+        .slick-arrow{
+            width: 26px;
+            height: 34px;
+        }
+
+        .slick-prev,
+        .slick-next{
+            border: none;
+            background: none;
+        }
+
+        .slick-prev{
+            left: -24px;
+            @include custom-media(636px){
+                left: -14px;
+            }
+            @include custom-media(594px){
+                left: -4px;
+            }
+        }
+
+        .slick-next{
+            right: -24px;
+            @include custom-media(636px){
+                right: -14px;
+            }
+            @include custom-media(594px){
+                right: -4px;
+            }
+        }
+
+        .slick-next:hover .fa-angle-right, 
+        .slick-prev:hover .fa-angle-left {
+            color: #008cd6;
+        }
+        
+        .fa{
+            font-size: 50px;
+            color: #000;
+        }
+    }
+}
+//----Tips section-------///
+
+//----Service section-------
+.service{
+    padding: 30px 0;
+    background: #ececec;
+    @include block_991{
+        padding: 15px 0;
+    }
+    @include block_767{
+        padding: 10px 0;
+    }
+    .row{
+        @include block_575{
+            justify-content: center;
+        }
+        .col-sm-6{
+            @include block_767{
+                display: flex;
+            }
+            .d-flex{
+                @include block_575{
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
+            @include block_575{
+                width: 230px;
+            }
+            @include custom-media(554px){
+                width: 200px;
+            }
+            @include custom-media(400px){
+                width: 175px;
+            }
+        }
+    }
+    
+
+    .fa{
+        font-size: 64px;
+        margin: 0 20px 0 3px;
+        color: $color;
+        @include custom-media(1999.98px){
+            font-size: 49px;
+            margin: 0 15px 0 3px;
+        }
+        @include block_991{
+            font-size: 35px;
+            margin: 0 10px 0 3px;
+        }
+    }
+
+    .service-text{
+        &__title{
+            font-family: "Roboto";
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.875;
+            color: #000;
+            @include custom-media(1999.98px){
+                font-size: 14px;
+            }
+            @include block_991{
+                font-size: 10px;
+            }
+        }
+
+        &__subtitle{
+            font-family: "Roboto";
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.2;
+            color: #111;
+            @include custom-media(1999.98px){
+                font-size: 12px;
+            }
+            @include block_991{
+                font-size: 9px;
+            }
+            @include block_575{
+                width: 110px;
+            }
+        }
+          
+    }
+}
+//----Service section-------///
+
+//----Info section-------
+.info{
+    .indentation{
+        margin: 70px auto;
+    }
+
+    &__title{
+        font-family: $MuseoSansCyrl;
+        font-size: 28px;
+        font-weight: 700;
+        color: #111;
+        line-height: 1.071;
+    }
+
+    &__subtitle{
+        font-family: $MuseoSansCyrl;
+        font-size: 16px;
+        line-height: 1.875;
+        font-weight: 300;
+        color: #000;
+    }
+
+    &__phone{
+        font-family: $MuseoSansCyrl;
+        font-size: 16px;
+        line-height: 1.875;
+        font-weight: 900;
+        color: $color;
+    }
+     
+    &__item{
+        font-family: $MuseoSansCyrl;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 300;
+        color: #000;
+        margin-bottom: 6px;
+
+        span{
+            font-weight: 700;
+        }
+
+        &::before{
+            content: ">";
+            font-size: 22px;
+            margin-right: 5px;
+            color: $color;
+        }
+    }
+}
+//----Info section-------///
+
+//----Subscription section-------
+.subscription{
+    background: $color;
+    padding: 25px 0;
+
+    &__title{
+        font-family: $MuseoSansCyrl;
+        font-size: 22px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    &__subtitle{
+        font-family: $MuseoSansCyrl;
+        font-size: 16px;
+        font-weight: 300;
+        color: #fff;
+    }
+
+    input{
+        width: 100%;
+        height: 45px;
+        padding-left: 20px;
+        border: none;
+
+        &::placeholder{
+            font-family: $MuseoSansCyrl;
+            font-size: 16px;
+            line-height: 1.875;
+            color: #3c3c3c;
+        }
+    }
+
+    &__btn{
+        width: 100%;
+        height: 45px;
+        display: inline-block;
+        font-family: $MuseoSansCyrl;
+        font-size: 16px;
+        color: #000;
+        text-transform: uppercase;
+        background: #eaeaea;
+        border: none;
+        &:focus{
+            outline: none;
+        }
+    }
+      
+}
+//----Subscription section-------///
+
+//----Footer-------
+.footer{
+    padding: 45px 0 29px 0;
+    background: #f3f3f3;
+    img{
+        width: 200px;
+        margin-bottom: 20px;
+    }
+    .text{
+        font-family: $MuseoSansCyrl;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.2;
+        color: #000;
+    }
+    a:hover{
+        text-decoration: underline;
+        color: $color;
+    }
+    .title{
+        font-family: $MuseoSansCyrl;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.667;
+        color: #000;
+    }
+    .subtitle{
+        font-family: $MuseoSansCyrl;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.667;
+        color: #000;
+        &::before{
+            content: ">";
+            font-size: 14px;
+            color: $color;
+            margin-right: 8px;
+        }
+    }
+
+     .col-xl-3:nth-child(4){
+        .subtitle{
+            &::before{
+                content: none;
+            }
+        }
+        .fa{
+            font-size: 14px;
+            color: $color;
+            margin-right: 8px;
+        }
+     } 
+}
+//----Footer-------///

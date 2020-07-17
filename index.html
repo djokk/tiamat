@@ -5,14 +5,15 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Document</title>
+   <title>Tiamat</title>
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="css/fonts.css">
    <link rel="stylesheet" href="css/font-awesome.css">
    <link rel="stylesheet" href="css/bootstrap.css">
    <link rel="stylesheet" href="css/bootstrap-reboot.css">
    <link rel="stylesheet" href="css/slick.css">
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -20,12 +21,12 @@
       <div class="nav-top">
          <div class="container">
             <div class="row">
-               <div class="col-xl-6 d-flex justify-content-between align-items-center">
+               <div class="col-xl-6 col-lg-5 col-md-6 col-sm-5 d-flex justify-content-between align-items-center">
                   <a href=""><img src="img/logo_03.png" alt=""></a>
                   <p class="nav-top__text">Акриловые герметики,клеи, наливные полы
                      для автомобилей, строек и промышленности</p>
                </div>
-               <div class="col-xl-6 d-flex justify-content-between align-items-center">
+               <div class="col-xl-6 col-lg-7 col-md-6 col-sm-7 d-flex justify-content-between align-items-center">
                   <form action="">
                      <div class="form-wrap">
                         <input class="form-input" type="text" placeholder="Поиск по товарам">
@@ -45,15 +46,17 @@
       </div>
       <div class="nav">
          <div class="container">
-            <nav class="">
-               <ul class="d-flex justify-content-between align-items-center">
-                  <li class="nav__catalog">
+            <nav class="d-flex justify-content-between align-items-center">
+               <ul>
+                  <li>
                      <a href="" class="nav__link d-flex justify-content-between align-items-center">
                         <i class="fa fa-tasks" aria-hidden="true"></i>
                         Каталог товаров
                         <i class="fa fa-angle-down" aria-hidden="true"></i>
                      </a>
                   </li>
+               </ul>
+               <ul>
                   <li><a href="">Бренды</a></li>
                   <li><a href="">О компании</a></li>
                   <li><a href="">Технология</a></li>
@@ -61,9 +64,11 @@
                   <li><a href="">Доставка и оплата</a></li>
                   <li><a href="">Советы</a></li>
                   <li><a href="">Контакты</a></li>
-                  <li class="nav__pb">
-                     <a href="" class="d-flex justify-content-center align-items-center">
-                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+               </ul>
+               <ul class="d-flex justify-content-between align-items-center">
+                  <li><a href=""><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
+                  <li>
+                     <a href="">
                         <div class="nav__shopping">
                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                            <span class="nav__shopping_number">3</span>
@@ -87,17 +92,17 @@
    </header>
 
    <section class="hit container indentation">
-      <div class="d-flex justify-content-between align-items-center ">
-         <div class="hit__name d-flex align-items-center w-100">
-            <i class="fa fa-bolt" aria-hidden="true"></i>
+      <div class="name d-flex align-items-center">
+         <i class="fa fa-bolt" aria-hidden="true"></i>
+         <div class="text-box">
             <h4 class="section-text">Хиты продаж</h4>
          </div>
-         <div class="d-flex align-items-center w-100">
-            <div class="line"></div>
+         <div class="line"></div>
+         <div class="link-box">
             <a href="" class="btn-link">Все товары</a>
          </div>
       </div>
-      <div class="slider-hit d-flex">
+      <div class="slider-hit">
          <div class="slider-hit__item">
             <div class="slider-hit__slider">
                <img class="slider-hit__img" src="img/tiamat_03.jpg" alt="">
@@ -155,28 +160,263 @@
       </div>
    </section>
 
-   <section class="popular indentation">
-      <div class="container d-flex justify-content-between align-items-center ">
-         <div class="popular__name d-flex align-items-center">
-            <i class="fa fa-ticket" aria-hidden="true"></i>
+   <section class="popular container indentation">
+      <div class="name d-flex align-items-center">
+         <i class="fa fa-bolt" aria-hidden="true"></i>
+         <div class="text-box">
             <h4 class="section-text">Популярные категории</h4>
          </div>
          <div class="line"></div>
-         <a href="" class="btn-link">Все товары</a>
+         <div class="link-box">
+            <a href="" class="btn-link">Все товары</a>
+         </div>
+      </div>
+      <div class="slider-popular row">
+         <div class="col-xl-4 slider-popular__item slider-popular__bg">
+            <h3 class="slider-popular__text">Для строек</h3>
+            <p class="slider-popular__subtitle">Какой-нибудь текст пояснящий будет тут</p>
+            <a href="" class="slider-popular__btn-item">Подробнее</a>
+            <img class="slider-popular__img" src="img/slider_popular_1_03.png" alt="">
+         </div>
+         <div class="col-xl-4 slider-popular__item slider-popular__bg">
+            <h3 class="slider-popular__text">Для строек</h3>
+            <p class="slider-popular__subtitle">Какой-нибудь текст пояснящий будет тут</p>
+            <a href="" class="slider-popular__btn-item">Подробнее</a>
+            <img class="slider-popular__img" src="img/slider_popular_1_03.png" alt="">
+         </div>
+         <div class="col-xl-4 slider-popular__item slider-popular__bg">
+            <h3 class="slider-popular__text">Для строек</h3>
+            <p class="slider-popular__subtitle">Какой-нибудь текст пояснящий будет тут</p>
+            <a href="" class="slider-popular__btn-item">Подробнее</a>
+            <img class="slider-popular__img" src="img/slider_popular_1_03.png" alt="">
+         </div>
+         <div class="col-xl-4 slider-popular__item slider-popular__bg">
+            <h3 class="slider-popular__text">Для строек</h3>
+            <p class="slider-popular__subtitle">Какой-нибудь текст пояснящий будет тут</p>
+            <a href="" class="slider-popular__btn-item">Подробнее</a>
+            <img class="slider-popular__img" src="img/slider_popular_1_03.png" alt="">
+         </div>
       </div>
    </section>
 
+   <section class="stock container indentation">
+      <div class="name d-flex align-items-center">
+         <i class="fa fa-bolt" aria-hidden="true"></i>
+         <div class="text-box">
+            <h4 class="section-text">Товары по акции</h4>
+         </div>
+         <div class="line"></div>
+         <div class="link-box">
+            <a href="" class="btn-link">Все товары</a>
+         </div>
+      </div>
+      <div class="slider-stock">
+         <div class="slider-stock__item">
+            <div class="slider-stock__slider">
+               <img class="slider-stock__img" src="img/slider_stock.jpg" alt="">
+               <h3 class="slider-stock__title">Герметик акриловый для дерева Tiamat A-125, ведро 5л (7кг)</h3>
+               <h4 class="slider-stock__price">1700 руб/шт</h4>
+               <div class="d-flex justify-content-center align-items-center">
+                  <p class="slider-stock__sub-title">1950 руб/шт</p>
+                  <span class="slider-stock__discount">-30%</span>
+               </div>
+            </div>
+         </div>
+         <div class="slider-stock__item">
+            <div class="slider-stock__slider">
+               <img class="slider-stock__img" src="img/slider_stock.jpg" alt="">
+               <h3 class="slider-stock__title">Герметик акриловый для дерева Tiamat A-125, ведро 5л (7кг)</h3>
+               <h4 class="slider-stock__price">1700 руб/шт</h4>
+               <div class="d-flex justify-content-center align-items-center">
+                  <p class="slider-stock__sub-title">1950 руб/шт</p>
+                  <span class="slider-stock__discount">-30%</span>
+               </div>
+            </div>
+         </div>
+         <div class="slider-stock__item">
+            <div class="slider-stock__slider">
+               <img class="slider-stock__img" src="img/slider_stock.jpg" alt="">
+               <h3 class="slider-stock__title">Герметик акриловый для дерева Tiamat A-125, ведро 5л (7кг)</h3>
+               <h4 class="slider-stock__price">1700 руб/шт</h4>
+               <div class="d-flex justify-content-center align-items-center">
+                  <p class="slider-stock__sub-title">1950 руб/шт</p>
+                  <span class="slider-stock__discount">-30%</span>
+               </div>
+            </div>
+         </div>
+         <div class="slider-stock__item">
+            <div class="slider-stock__slider">
+               <img class="slider-stock__img" src="img/slider_stock.jpg" alt="">
+               <h3 class="slider-stock__title">Герметик акриловый для дерева Tiamat A-125, ведро 5л (7кг)</h3>
+               <h4 class="slider-stock__price">1700 руб/шт</h4>
+               <div class="d-flex justify-content-center align-items-center">
+                  <p class="slider-stock__sub-title">1950 руб/шт</p>
+                  <span class="slider-stock__discount">-30%</span>
+               </div>
+            </div>
+         </div>
+         <div class="slider-stock__item">
+            <div class="slider-stock__slider">
+               <img class="slider-stock__img" src="img/slider_stock.jpg" alt="">
+               <h3 class="slider-stock__title">Герметик акриловый для дерева Tiamat A-125, ведро 5л (7кг)</h3>
+               <h4 class="slider-stock__price">1700 руб/шт</h4>
+               <div class="d-flex justify-content-center align-items-center">
+                  <p class="slider-stock__sub-title">1950 руб/шт</p>
+                  <span class="slider-stock__discount">-30%</span>
+               </div>
+            </div>
+         </div>
+         <div class="slider-stock__item">
+            <div class="slider-stock__slider">
+               <img class="slider-stock__img" src="img/slider_stock.jpg" alt="">
+               <h3 class="slider-stock__title">Герметик акриловый для дерева Tiamat A-125, ведро 5л (7кг)</h3>
+               <h4 class="slider-stock__price">1700 руб/шт</h4>
+               <div class="d-flex justify-content-center align-items-center">
+                  <p class="slider-stock__sub-title">1950 руб/шт</p>
+                  <span class="slider-stock__discount">-30%</span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
 
+   <section class="tips container indentation">
+      <div class="name d-flex align-items-center">
+         <i class="fa fa-bolt" aria-hidden="true"></i>
+         <div class="text-box">
+            <h4 class="section-text">Советы (блог)</h4>
+         </div>
+         <div class="line"></div>
+         <div class="link-box">
+            <a href="" class="btn-link">Все товары</a>
+         </div>
+      </div>
+      <div class="slider-tips row">
+         <div class="col-xl-4 slider-tips__item d-flex flex-column align-items-center">
+            <img class="slider-tips__img" src="img/slider_tips_03.jpg" alt="">
+            <p class="slider-tips__text">Как правильно наносить герметик на влажную поверхность</p>
+         </div>
+         <div class="col-xl-4 slider-tips__item d-flex flex-column align-items-center">
+            <img class="slider-tips__img" src="img/slider_tips_03.jpg" alt="">
+            <p class="slider-tips__text">Как правильно наносить герметик на влажную поверхность</p>
+         </div>
+         <div class="col-xl-4 slider-tips__item d-flex flex-column align-items-center">
+            <img class="slider-tips__img" src="img/slider_tips_03.jpg" alt="">
+            <p class="slider-tips__text">Как правильно наносить герметик на влажную поверхность</p>
+         </div>
+         <div class="col-xl-4 slider-tips__item d-flex flex-column align-items-center">
+            <img class="slider-tips__img" src="img/slider_tips_03.jpg" alt="">
+            <p class="slider-tips__text">Как правильно наносить герметик на влажную поверхность</p>
+         </div>
+      </div>
+   </section>
+
+   <section class="service indentation">
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 d-flex">
+               <i class="fa fa-shield" aria-hidden="true"></i>
+               <div class="service-text">
+                  <h1 class="service-text__title">Гарантия качества</h1>
+                  <p class="service-text__subtitle">Все товары в нашем каталоге имеют гарантию</p>
+               </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 d-flex">
+               <div class="d-flex">
+                  <i class="fa fa-truck" aria-hidden="true"></i>
+                  <div class="service-text">
+                     <h1 class="service-text__title">Бесплатная доставка</h1>
+                        <p class="service-text__subtitle">Бесплатная доставка по всем регионам России</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 d-flex">
+               <i class="fa fa-history" aria-hidden="true"></i>
+               <div class="service-text">
+                  <h1 class="service-text__title">Обмен и возврат</h1>
+                  <p class="service-text__subtitle">Мы даем до 30 дней на обмен и возврат товара</p>
+               </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 d-flex">
+               <div class="d-flex">
+                  <i class="fa fa-bullseye" aria-hidden="true"></i>
+                  <div class="service-text">
+                     <h1 class="service-text__title">Поддержка клиентов</h1>
+                     <p class="service-text__subtitle">Мы дорожим мнением каждого клиента</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="info">
+      <div class="container indentation">
+         <h1 class="info__title">Интернет-магазин по акриловым герметикам, клеям, наливным полам для машин,
+            строек и промышленности</h1>
+         <p class="info__subtitle">Если у вас остались вопросы, специалисты магазина готовы профессионально проконсультировать по поводу выбора, оплаты, доставки товаров по телефонам:</p>
+         <p class="info__phone">+7 831 214 06 14;  +7 831 214 06 14.</p>
+         <p class="info__subtitle">Интернет-магазин Tiamat предлагает следующие изделия:</p>
+         <p class="info__item"><span>Акриловые герметики</span> — По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.</p>
+         <p class="info__item"><span>Различные клеи</span> идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке новых предложений. </p>
+         <p class="info__item"><span>Наливные полы</span> равным образом рамки и место обучения кадров в значительной степени обуславливает создание модели развития. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности требуют определения и уточнения форм развития. Значимость этих проблем настолько очевидна, что консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития.</p>
+      </div>
+   </section>
+   
+   <section class="subscription">
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-4">
+               <h1 class="subscription__title">Подпишитесь на рассылку</h1>
+               <p class="subscription__subtitle">и будьте в курсе всех акций нашего магазина</p>
+            </div>
+            <div class="col-xl-6">
+               <input type="subscription__text" placeholder="Введите ваш электронный адрес">
+            </div>
+            <div class="col-xl-2">
+               <button class="subscription__btn">Подписаться</button>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <footer class="footer">
+      <div class="container">
+         <div class="row flex-md-wrap">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+               <a href=""><img src="img/logo_03.png" alt=""></a>
+               <p class="text">Равным образом постоянный количественный рост и сфера нашей активности требуют определения и уточнения позиций, занимаемых</p>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+               <h1 class="title">О компании</h1>
+               <a href=""><p class="subtitle">Варианты доставки и оплаты</p></a>
+               <a href=""><p class="subtitle">Обмен и возврат товара</p></a>
+               <a href=""><p class="subtitle">Скачать прайс-лист товаров</p></a>
+               <a href=""><p class="subtitle">Политика конфиденциальности</p></a>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+               <h1 class="title">Категории магазина</h1>
+               <a href=""><p class="subtitle">Акриловые герметики</p></a>
+               <a href=""><p class="subtitle">Клеи-герметики</p></a>
+               <a href=""><p class="subtitle">Наливные полы</p></a>
+               <a href=""><p class="subtitle">Комплектующие</p></a>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+               <h1 class="title">Контакты</h1>
+               <p class="subtitle"><i class="fa fa-map-marker" aria-hidden="true"></i>Н.Новгород, ул.Федосеенко 41, 5</p>
+               <a href="" type="phone"><p class="subtitle"><i class="fa fa-phone" aria-hidden="true"></i>+7 831 214 06 14</p></a>
+               <p class="subtitle"><i class="fa fa-clock-o" aria-hidden="true"></i>Пн-Пт: с 9:00 до 18:00</p>
+               <a href="" type="email"><p class="subtitle"><i class="fa fa-envelope" aria-hidden="true"></i>info@tiamat.ru</p></a>
+            </div>
+         </div>
+      </div>
+   </footer>
 
    <script src="js/jquery-3.4.1.min.js"></script>
    <script src="js/popper.min.js"></script>
    <script src="js/bootstrap.js"></script>
    <script src="js/slick.min.js"></script>
    <script src="js/slider.js"></script>
-   <script>
-      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
-         ':35729/livereload.js?snipver=1"></' + 'script>')
-   </script>
 </body>
 
 </html>

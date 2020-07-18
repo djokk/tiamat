@@ -8,6 +8,16 @@ Thumbs.db:encryptable
 ehthumbs.db
 ehthumbs_vista.db
 
+<<<<<<< HEAD
+=======
+bootstrap.css
+bootstrap-reboot.css
+font-awesome.css
+bootstrap.js
+jquery-3.4.1.min.js
+slick.min.js
+
+>>>>>>> 7cc55b8... pochti full
 # Dump file
 *.stackdump
 
@@ -17,6 +27,12 @@ ehthumbs_vista.db
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
+<<<<<<< HEAD
+=======
+fonts/
+
+
+>>>>>>> 7cc55b8... pochti full
 # Windows Installer files
 *.cab
 *.msi
@@ -27,4 +43,8 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+<<<<<<< HEAD
 # End of https://www.toptal.com/developers/gitignore/api/windows
+=======
+# End of https://www.toptal.com/developers/gitignore/api/windows
+>>>>>>> 7cc55b8... pochti full

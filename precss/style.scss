@@ -1145,6 +1145,11 @@ ul {
 .footer{
     padding: 45px 0 29px 0;
     background: #f3f3f3;
+
+    @include block_575{
+        padding: 25px 0 20px 0;
+    }
+
     img{
         width: 200px;
         margin-bottom: 20px;
@@ -1182,7 +1187,11 @@ ul {
         }
     }
 
-     .col-xl-3:nth-child(4){
+    .col-xl-3{
+        text-align: center;
+    }
+
+    .col-xl-3:nth-child(4){
         .subtitle{
             &::before{
                 content: none;

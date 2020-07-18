@@ -946,6 +946,10 @@ ul {
   margin-right: 8px;
 }
 
+.footer .col-xl-3 {
+  text-align: center;
+}
+
 .footer .col-xl-3:nth-child(4) .subtitle::before {
   content: none;
 }
@@ -1287,6 +1291,10 @@ ul {
 
   .info__item {
     font-size: 10px;
+  }
+
+  .footer {
+    padding: 25px 0 20px 0;
   }
 }
 

@@ -30,6 +30,33 @@ ul {
     outline: none;
 }
 
+#top {
+    display: none;
+    position: fixed;
+    right: 3%;
+    bottom: 2%;
+    cursor: pointer;
+    z-index: 100;
+
+    @include block_575{
+        right: 25px;
+    }
+
+    .fa-arrow-up{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background: $color;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        font-size: 30px;
+        color: #fff;
+        padding: 15px;
+    }
+}
+
 //----верхний навигатор-------
 .nav-top {
     margin: 30px 0px 22px;
@@ -189,18 +216,12 @@ ul {
         justify-content: space-between;
         align-items: center;
 
-        @include block_1199{
+        @include custom-media-min(991px){
             width: 659px;
+            display: flex;
         }
         @include block_991{
             display: none;
-        }
-    }
-
-    ul:nth-child(3){
-        width: 64px;
-        @include block_1199{
-            width: 54px;
         }
     }
 
@@ -219,6 +240,12 @@ ul {
         font-size: 23px;
     }
 
+    .client{
+        width: 65px;
+        @include block_991{
+            width: 90px;
+        }
+    }
     &__shopping {
         position: relative;
     }
@@ -239,6 +266,68 @@ ul {
         right: -6px;
         color: #fff;
     }
+
+    .burger{
+        a{
+            display: none;
+            color: #000;
+            .fa{
+                font-size: 26px;
+            }
+            .fa-times{
+                font-size: 28px;
+            }
+            @include block_991{
+                display: block;
+                color: #000;
+    
+            }
+        }
+    }
+
+    @include block_991{
+        .menu{
+            width: 190px !important;
+            height: 239px;
+            background: #fcfcfc;
+            border-left: 1px solid #e8e8e8;
+            border-bottom: 1px solid #e8e8e8;
+            border-right: 1px solid #e8e8e8;
+            box-shadow: 0px 7px 3.24px 5px rgba(108,83,64,0.06);
+            text-align: center;
+            right: 144px;
+            top: 197px;
+            position: absolute;
+            z-index: 99;
+
+            @include block_575{
+                right: 14px;
+                top: 256px;
+            }
+            @include custom-media(453px){
+                top: 271px;
+            }
+
+            a{
+                display: inline-block;
+                width: 100%;
+                padding: 5px 0;
+                &:hover{
+                    background: $color;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+.menuAll{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
 }
 //----навигатор-------///
 
@@ -455,7 +544,7 @@ ul {
     top: 50%;
     transform: translateY(-50%);
     position: absolute;
-    z-index: 99;
+    z-index: 90;
     color: #848484;
     &:focus{
         outline: none;
@@ -850,6 +939,14 @@ ul {
 .info{
     .indentation{
         margin: 70px auto;
+
+        @include block_991{
+            margin: 40px auto;
+        }
+        
+        @include block_575{
+            margin: 25px auto;
+        }
     }
 
     &__title{
@@ -858,6 +955,14 @@ ul {
         font-weight: 700;
         color: #111;
         line-height: 1.071;
+
+        @include block_991{
+            font-size: 20px;
+        }
+
+        @include block_575{
+            font-size: 10px;
+        }
     }
 
     &__subtitle{
@@ -866,6 +971,14 @@ ul {
         line-height: 1.875;
         font-weight: 300;
         color: #000;
+
+        @include block_991{
+            font-size: 13px;
+        }
+
+        @include block_575{
+            font-size: 7px;
+        }
     }
 
     &__phone{
@@ -874,8 +987,33 @@ ul {
         line-height: 1.875;
         font-weight: 900;
         color: $color;
+
+        @include block_991{
+            font-size: 13px;
+        }
+
+        @include block_575{
+            font-size: 10px;
+        }
     }
-     
+    
+    &__subtitle2{
+        font-family: $MuseoSansCyrl;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 300;
+        color: #000;
+        margin-bottom: 6px;
+
+        @include block_991{
+            font-size: 13px;
+        }
+
+        @include block_575{
+            font-size: 11px;
+        }
+    }
+
     &__item{
         font-family: $MuseoSansCyrl;
         font-size: 16px;
@@ -883,6 +1021,14 @@ ul {
         font-weight: 300;
         color: #000;
         margin-bottom: 6px;
+
+        @include block_991{
+            font-size: 13px;
+        }
+
+        @include block_575{
+            font-size: 10px;
+        }
 
         span{
             font-weight: 700;
@@ -903,12 +1049,27 @@ ul {
     background: $color;
     padding: 25px 0;
 
+    @include block_991{
+        padding: 20px 0;
+    }
+    @include block_767{
+        padding: 15px 0;
+    }
+
     &__title{
         font-family: $MuseoSansCyrl;
         font-size: 22px;
         font-weight: 900;
         text-transform: uppercase;
         color: #fff;
+
+        @include block_991{
+            font-size: 13px;
+        }
+        @include block_767{
+            font-size: 9px;
+            line-height: 1.8;
+        }
     }
 
     &__subtitle{
@@ -916,6 +1077,14 @@ ul {
         font-size: 16px;
         font-weight: 300;
         color: #fff;
+
+        @include block_991{
+            font-size: 9px;
+        }
+        @include block_767{
+            font-size: 7px;
+        }
+        
     }
 
     input{
@@ -923,12 +1092,26 @@ ul {
         height: 45px;
         padding-left: 20px;
         border: none;
+        font-size: 16;
 
         &::placeholder{
             font-family: $MuseoSansCyrl;
             font-size: 16px;
             line-height: 1.875;
             color: #3c3c3c;
+
+            @include block_991{
+                font-size: 10px;
+            }
+        }
+
+        @include block_991{
+            height: 28px;
+            font-size: 12px;
+        }
+        @include block_767{
+            height: 24px;
+            font-size: 10px;
         }
     }
 
@@ -944,6 +1127,14 @@ ul {
         border: none;
         &:focus{
             outline: none;
+        }
+        @include block_991{
+            height: 28px;
+            font-size: 13px;
+        }
+        @include block_767{
+            height: 24px;
+            font-size: 10px;
         }
     }
       

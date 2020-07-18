@@ -56,7 +56,7 @@
                      </a>
                   </li>
                </ul>
-               <ul>
+               <ul class="menu">
                   <li><a href="">Бренды</a></li>
                   <li><a href="">О компании</a></li>
                   <li><a href="">Технология</a></li>
@@ -65,13 +65,17 @@
                   <li><a href="">Советы</a></li>
                   <li><a href="">Контакты</a></li>
                </ul>
-               <ul class="d-flex justify-content-between align-items-center">
+               
+               <ul class="client d-flex justify-content-between align-items-center">
+                  <li class="burger">
+                     <a href="" class="bg-menu"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                  </li>
                   <li><a href=""><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
                   <li>
                      <a href="">
                         <div class="nav__shopping">
                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                           <span class="nav__shopping_number">3</span>
+                           <span class="nav__shopping_number">0</span>
                         </div>
                      </a>
                   </li>
@@ -79,6 +83,7 @@
             </nav>
          </div>
       </div>
+      <div class="menuAll"></div>
       <div class="container">
          <div class="slider-header">
             <div class="slider-header__item">
@@ -91,6 +96,10 @@
       </div>
    </header>
 
+   <div id="top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+  </div>
+  
    <section class="hit container indentation">
       <div class="name d-flex align-items-center">
          <i class="fa fa-bolt" aria-hidden="true"></i>
@@ -356,7 +365,7 @@
             строек и промышленности</h1>
          <p class="info__subtitle">Если у вас остались вопросы, специалисты магазина готовы профессионально проконсультировать по поводу выбора, оплаты, доставки товаров по телефонам:</p>
          <p class="info__phone">+7 831 214 06 14;  +7 831 214 06 14.</p>
-         <p class="info__subtitle">Интернет-магазин Tiamat предлагает следующие изделия:</p>
+         <p class="info__subtitle2">Интернет-магазин Tiamat предлагает следующие изделия:</p>
          <p class="info__item"><span>Акриловые герметики</span> — По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.</p>
          <p class="info__item"><span>Различные клеи</span> идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке новых предложений. </p>
          <p class="info__item"><span>Наливные полы</span> равным образом рамки и место обучения кадров в значительной степени обуславливает создание модели развития. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности требуют определения и уточнения форм развития. Значимость этих проблем настолько очевидна, что консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития.</p>
@@ -366,15 +375,15 @@
    <section class="subscription">
       <div class="container">
          <div class="row">
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-lg-5 col-md-4 col-sm-4">
                <h1 class="subscription__title">Подпишитесь на рассылку</h1>
                <p class="subscription__subtitle">и будьте в курсе всех акций нашего магазина</p>
             </div>
-            <div class="col-xl-6">
-               <input type="subscription__text" placeholder="Введите ваш электронный адрес">
+            <div class="col-xl-6 col-lg-5 col-md-5 col-sm-5">
+               <input type="email" class="subscription__text" placeholder="Введите ваш электронный адрес">
             </div>
-            <div class="col-xl-2">
-               <button class="subscription__btn">Подписаться</button>
+            <div class="col-xl-2 col-lg-2 col-md-3 col-sm-3">
+               <button type="submit" class="subscription__btn">Подписаться</button>
             </div>
          </div>
       </div>
@@ -417,6 +426,7 @@
    <script src="js/bootstrap.js"></script>
    <script src="js/slick.min.js"></script>
    <script src="js/slider.js"></script>
+   <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -38,20 +38,10 @@ $(document).ready(function () {
             scrollTop: 0
         }, 1000)
     })
-    // console.log($('.menu').css('display'));
 
-    // console.log($('nav').html());
-
-    // if($(window).width() > '991'){
-    //     $('.menu').removeClass('show');
-    //     $('.menuAll').css('display','none');
-    // }
-    
-    // if($(window).width() >= '992'){
-    //     $('.menu').css('display','flex');
-    // }
-    // else{
-    //     $('.menu').css('display','none');
-    // }
-    
+    $(window).on('resize', function(e){
+        if(window.innerWidth > 990){
+            $('.menu').attr('style','');
+        }
+    })
 });
